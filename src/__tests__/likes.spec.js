@@ -30,7 +30,7 @@ describe("Likes", () => {
 
   it("should not be able to like a repository that does not exist", async () => {
     await request(app)
-      .post(`/repositories/123/like`)
+      .post(`/repositories/6a801b00-6e8e-45cf-a170-cfd6c4ad3671/like`)
       .expect(400);
   });
 });
